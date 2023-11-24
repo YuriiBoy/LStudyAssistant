@@ -141,12 +141,18 @@
   <ItemGroup>
     <ClCompile Include="LanStudAss.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="ShortListManager.cpp" />
     <ClCompile Include="TestMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="ShortListManager.h" />
     <ClInclude Include="TestMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data.txt" />
+    <Text Include="ShortListData.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

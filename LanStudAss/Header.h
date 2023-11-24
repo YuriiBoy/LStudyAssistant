@@ -5,4 +5,5 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <map>
 #include <Windows.h>

@@ -24,6 +24,9 @@
     <ClCompile Include="TestMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ShortListManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
@@ -35,5 +38,12 @@
     <ClInclude Include="TestMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ShortListManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ShortListData.txt" />
+    <Text Include="Data.txt" />
   </ItemGroup>
 </Project>
