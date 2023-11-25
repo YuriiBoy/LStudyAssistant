@@ -143,12 +143,14 @@
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="ShortListManager.cpp" />
     <ClCompile Include="TestMenu.cpp" />
+    <ClCompile Include="VocabManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="ShortListManager.h" />
     <ClInclude Include="TestMenu.h" />
+    <ClInclude Include="VocabManager.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Data.txt" />

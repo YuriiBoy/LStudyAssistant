@@ -34,11 +34,11 @@ void ShortListManager::saveData()
 
 void ShortListManager::saveAllData()
 {
-	vocab.insert(shortList.begin(), shortList.end());
+	dict.insert(shortList.begin(), shortList.end());
 
 	std::ofstream fout;
 	fout.open("Data.txt");
-	for (const auto& elem : vocab) {
+	for (const auto& elem : dict) {
 		fout << elem.first << std::endl;
 		fout << elem.second << std::endl;
 	}

@@ -2,6 +2,8 @@
 #include "Menu.h"
 #include "TestMenu.h"
 #include "ShortListManager.h"
+#include "VocabManager.h"
+
 
 int main()
 {
@@ -11,8 +13,9 @@ int main()
 		"Show shortlist",
 		"Delete shortlist",
 		"Show all vocabular",
-		"Correct word translation in the vocabulary",
-		"Look for word tranlation in the vocabulary",
+		"Correct word translation in the dictionary",
+		"Look for word tranlation in the dictionary",
+		"Delete dictionary",
 		"Test",
 		"Exit"
 	};
@@ -28,7 +31,9 @@ int main()
 	std::unique_ptr<Menu> m(new Menu(taskName, menuList));
 	std::unique_ptr<TestMenu> t(new TestMenu(testMenu));
 	auto sl = std::make_unique<ShortListManager>();
+	auto vm = std::make_unique<VocabManager>();
 	sl->loadData();
+	vm->loadData();
 
 	bool stop = false;
 	bool test = true;
@@ -50,12 +55,18 @@ int main()
 			sl->deleteData();
 			break;
 		case 4:
+			vm->displayData();
 			break;
 		case 5:
+			vm->changeData();
 			break;
 		case 6:
+			vm->searchData();
 			break;
 		case 7:
+			vm->deleteData();
+			break;
+		case 8:
 			do {
 				system("cls");
 				t->displayTestMenu();
@@ -79,7 +90,7 @@ int main()
 				}
 			} while (test);
 			break;
-		case 8: stop = true;
+		case 9: stop = true;
 			break;
 		default: 
 			std::cout << "\n Wrong choice";

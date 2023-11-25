@@ -1,16 +1,14 @@
 #pragma once
 
-class ShortListManager
+class VocabManager
 {
-	std::map<std::string, std::string> shortList;
 	std::map<std::string, std::string> dict;
 public:
 	void loadData();
 	void saveData();
-	void saveAllData();
 	void displayData();
-	void addData();
+	void changeData();
+	void searchData();
 	void deleteData();
-
 };
 
