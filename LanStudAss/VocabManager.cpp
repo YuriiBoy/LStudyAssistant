@@ -114,7 +114,7 @@ void VocabManager::deleteData()
 		return;
 	}
 	else {
-		std::cout << "\n Do you realy want to delete the Dictionary (y/n) ? - ";
+		std::cout << "\n DO YOU REALLY WANT to delete the Dictionary (y/n) ? - ";
 		std::cin >> choice;
 		if (choice != 'y') {
 			return;

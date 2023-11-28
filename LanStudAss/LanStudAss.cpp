@@ -3,6 +3,7 @@
 #include "TestMenu.h"
 #include "ShortListManager.h"
 #include "VocabManager.h"
+#include "TestManager.h"
 
 
 int main()
@@ -23,8 +24,6 @@ int main()
 	std::vector<std::string> testMenu = {
 		"Take the short list test",
 		"Take the common test",
-		"Show previous results",
-		"Delete previous resuilts",
 		"Exit"
 	};
 
@@ -32,8 +31,12 @@ int main()
 	std::unique_ptr<TestMenu> t(new TestMenu(testMenu));
 	auto sl = std::make_unique<ShortListManager>();
 	auto vm = std::make_unique<VocabManager>();
+	auto ts = std::make_unique<TestManager>();
 	sl->loadData();
 	vm->loadData();
+	ts->loadShortListData();
+	ts->loadData();
+	m->setEncoding();
 
 	bool stop = false;
 	bool test = true;
@@ -67,21 +70,20 @@ int main()
 			vm->deleteData();
 			break;
 		case 8:
+			system("cls");
 			do {
-				system("cls");
+				//ts->display();
 				t->displayTestMenu();
 				int var = t->getChoice();
 				switch (var)
 				{
 				case 1:
+					ts->shortListTest();
 					break;
 				case 2:
+					ts->commonTest();
 					break;
-				case 3:
-					break;
-				case 4:
-					break;
-				case 5: test = false;
+				case 3: test = false;
 					break;
 				default:
 					std::cout << "\n Wrong choice";

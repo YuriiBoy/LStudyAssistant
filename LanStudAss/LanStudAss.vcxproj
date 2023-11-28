@@ -142,6 +142,8 @@
     <ClCompile Include="LanStudAss.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="ShortListManager.cpp" />
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="TestManager.cpp" />
     <ClCompile Include="TestMenu.cpp" />
     <ClCompile Include="VocabManager.cpp" />
   </ItemGroup>
@@ -149,12 +151,15 @@
     <ClInclude Include="Header.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="ShortListManager.h" />
+    <ClInclude Include="Test.h" />
+    <ClInclude Include="TestManager.h" />
     <ClInclude Include="TestMenu.h" />
     <ClInclude Include="VocabManager.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Data.txt" />
     <Text Include="ShortListData.txt" />
+    <Text Include="Test.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

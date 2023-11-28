@@ -30,6 +30,12 @@
     <ClCompile Include="VocabManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TestManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
@@ -47,9 +53,16 @@
     <ClInclude Include="VocabManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TestManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ShortListData.txt" />
     <Text Include="Data.txt" />
+    <Text Include="Test.txt" />
   </ItemGroup>
 </Project>

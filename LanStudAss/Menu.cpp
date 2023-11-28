@@ -5,6 +5,12 @@ Menu::Menu(std::string taskName, std::vector<std::string> menuList)
 	: taskName(taskName), menuList(menuList)
 {}
 
+void Menu::setEncoding()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+}
+
 void Menu::displayTaskName() const
 {
 	system("cls");
