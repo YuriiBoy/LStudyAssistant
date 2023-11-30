@@ -19,7 +19,8 @@ void TestManager::loadShortListData()
 		Test tests(id, key, val, quest, ransw, percent);
 		test.push_back(tests);
 	}
-	test.pop_back();
+	
+	test.pop_back();	
 	fin.close();
 }
 
@@ -42,7 +43,8 @@ void TestManager::loadData()
 		Test tests(id, key, val, quest, ransw, percent);
 		testDict.push_back(tests);
 	}
-	test.pop_back();
+	
+	testDict.pop_back();	
 	fin.close();
 }
 

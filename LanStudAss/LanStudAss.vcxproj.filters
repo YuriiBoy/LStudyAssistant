@@ -63,6 +63,5 @@
   <ItemGroup>
     <Text Include="ShortListData.txt" />
     <Text Include="Data.txt" />
-    <Text Include="Test.txt" />
   </ItemGroup>
 </Project>
